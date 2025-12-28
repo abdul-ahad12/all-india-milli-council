@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All India Milli Council - Telangana</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Telugu:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         :root {
             /* Light Mode Colors - inspired by the logo */
@@ -119,27 +120,17 @@
             gap: 1rem;
         }
 
-        .logo-circle {
+        .logo-img {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: var(--gradient-primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+            object-fit: contain;
             animation: pulse 3s ease-in-out infinite;
         }
 
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.05); }
-        }
-
-        .logo-circle span {
-            color: white;
-            font-weight: 700;
-            font-size: 1.2rem;
         }
 
         .logo-text {
@@ -1292,9 +1283,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo">
-                <div class="logo-circle">
-                    <span>ا</span>
-                </div>
+                <img src="images/logo.png" alt="AIMC Logo" class="logo-img">
                 <div class="logo-text">
                     <span class="logo-title" data-en="All India Milli Council" data-te="ఆల్ ఇండియా మిల్లీ కౌన్సిల్" data-ur="آل انڈیا ملی کونسل">All India Milli Council</span>
                     <span class="logo-subtitle" data-en="Telangana State" data-te="తెలంగాణ రాష్ట్రం" data-ur="تلنگانہ اسٹیٹ">Telangana State</span>
@@ -1340,7 +1329,7 @@
         
         <div class="hero-content">
             <div class="hero-badge">
-                <span>🏛️</span>
+                <i data-lucide="landmark" style="width: 18px; height: 18px;"></i>
                 <span data-en="Regd. No: 586/1994" data-te="నమోదు సంఖ్య: 586/1994" data-ur="رجسٹریشن نمبر: 586/1994">Regd. No: 586/1994</span>
             </div>
             <h1 class="hero-title">
@@ -1390,25 +1379,25 @@
 
             <div class="about-grid">
                 <div class="about-card reveal">
-                    <div class="card-icon">👨‍👩‍👧‍👦</div>
+                    <div class="card-icon"><i data-lucide="users" style="width: 28px; height: 28px; color: white;"></i></div>
                     <h3 class="card-title" data-en="Family Counseling" data-te="కుటుంబ కౌన్సెలింగ్" data-ur="خاندانی مشاورت">Family Counseling</h3>
                     <p class="card-text" data-en="Our trained counselors address marital challenges, generational gaps, and parenting concerns with wisdom and care, restoring peace, dignity, and understanding within families." data-te="మా శిక్షణ పొందిన కౌన్సెలర్లు వివాహ సవాళ్లు, తరాల అంతరాలు మరియు పేరెంటింగ్ ఆందోళనలను జ్ఞానం మరియు శ్రద్ధతో పరిష్కరిస్తారు, కుటుంబాలలో శాంతి, గౌరవం మరియు అవగాహనను పునరుద్ధరిస్తారు." data-ur="ہمارے تربیت یافتہ مشیران ازدواجی چیلنجوں، نسلی فرق، اور پرورش کے خدشات کو حکمت اور دیکھ بھال کے ساتھ حل کرتے ہیں، خاندانوں میں امن، وقار اور سمجھ بوجھ کی بحالی کرتے ہیں۔">Our trained counselors address marital challenges, generational gaps, and parenting concerns with wisdom and care, restoring peace, dignity, and understanding within families.</p>
                 </div>
 
                 <div class="about-card reveal">
-                    <div class="card-icon">📚</div>
+                    <div class="card-icon"><i data-lucide="book-open" style="width: 28px; height: 28px; color: white;"></i></div>
                     <h3 class="card-title" data-en="Modern Education" data-te="ఆధునిక విద్య" data-ur="جدید تعلیم">Modern Education</h3>
                     <p class="card-text" data-en="Through initiatives like Exam O'Clock and free coaching for Urdu medium students, we empower youth with academic excellence and emotional resilience for future success." data-te="ఎగ్జామ్ ఓ'క్లాక్ మరియు ఉర్దూ మాధ్యమ విద్యార్థులకు ఉచిత కోచింగ్ వంటి కార్యక్రమాల ద్వారా, భవిష్యత్తు విజయం కోసం విద్యా శ్రేష్ఠత మరియు భావోద్వేగ స్థితిస్థాపకతను యువతకు అందిస్తాము." data-ur="ایگزام او'کلاک اور اردو میڈیم طلباء کے لیے مفت کوچنگ جیسے اقدامات کے ذریعے، ہم نوجوانوں کو تعلیمی عمدگی اور مستقبل کی کامیابی کے لیے جذباتی لچک سے بااختیار بناتے ہیں۔">Through initiatives like Exam O'Clock and free coaching for Urdu medium students, we empower youth with academic excellence and emotional resilience for future success.</p>
                 </div>
 
                 <div class="about-card reveal">
-                    <div class="card-icon">⚖️</div>
+                    <div class="card-icon"><i data-lucide="scale" style="width: 28px; height: 28px; color: white;"></i></div>
                     <h3 class="card-title" data-en="Social Justice" data-te="సామాజిక న్యాయం" data-ur="سماجی انصاف">Social Justice</h3>
                     <p class="card-text" data-en="We advocate for minority rights, provide legal aid to marginalized prisoners, and work towards inclusive development ensuring every voice is heard and every identity respected." data-te="మేము మైనారిటీ హక్కుల కోసం వాదిస్తాము, అట్టడుగు ఖైదీలకు న్యాయ సహాయం అందిస్తాము మరియు ప్రతి స్వరం వినబడేలా మరియు ప్రతి గుర్తింపు గౌరవించబడేలా సమగ్ర అభివృద్ధి కోసం పని చేస్తాము." data-ur="ہم اقلیتی حقوق کی وکالت کرتے ہیں، پسماندہ قیدیوں کو قانونی امداد فراہم کرتے ہیں، اور جامع ترقی کی طرف کام کرتے ہیں تاکہ ہر آواز سنی جائے اور ہر شناخت کا احترام کیا جائے۔">We advocate for minority rights, provide legal aid to marginalized prisoners, and work towards inclusive development ensuring every voice is heard and every identity respected.</p>
                 </div>
 
                 <div class="about-card reveal">
-                    <div class="card-icon">🗳️</div>
+                    <div class="card-icon"><i data-lucide="vote" style="width: 28px; height: 28px; color: white;"></i></div>
                     <h3 class="card-title" data-en="Political Awareness" data-te="రాజకీయ అవగాహన" data-ur="سیاسی آگاہی">Political Awareness</h3>
                     <p class="card-text" data-en="Through voter awareness drives and civic engagement programs, we transform civic duty into a movement of unity and empowerment, strengthening democratic participation." data-te="ఓటరు అవగాహన డ్రైవ్‌లు మరియు పౌర నిశ్చితార్థ కార్యక్రమాల ద్వారా, మేము పౌర కర్తవ్యాన్ని ఐక్యత మరియు సాధికారత ఉద్యమంగా మార్చాము, ప్రజాస్వామ్య భాగస్వామ్యాన్ని బలపరుస్తాము." data-ur="ووٹر بیداری مہموں اور شہری مشغولیت کے پروگراموں کے ذریعے، ہم شہری فرض کو اتحاد اور بااختیار بنانے کی تحریک میں بدل دیتے ہیں، جمہوری شرکت کو مضبوط کرتے ہیں۔">Through voter awareness drives and civic engagement programs, we transform civic duty into a movement of unity and empowerment, strengthening democratic participation.</p>
                 </div>
@@ -1427,7 +1416,7 @@
 
             <div class="programs-grid">
                 <div class="program-card reveal">
-                    <div class="program-image">📖</div>
+                    <div class="program-image"><i data-lucide="notebook-pen" style="width: 64px; height: 64px; color: rgba(255,255,255,0.8);"></i></div>
                     <div class="program-content">
                         <span class="program-tag" data-en="Education" data-te="విద్య" data-ur="تعلیم">Education</span>
                         <h3 class="program-title" data-en="Exam O'Clock" data-te="ఎగ్జామ్ ఓ'క్లాక్" data-ur="ایگزام او'کلاک">Exam O'Clock</h3>
@@ -1436,7 +1425,7 @@
                 </div>
 
                 <div class="program-card reveal">
-                    <div class="program-image">🏆</div>
+                    <div class="program-image"><i data-lucide="trophy" style="width: 64px; height: 64px; color: rgba(255,255,255,0.8);"></i></div>
                     <div class="program-content">
                         <span class="program-tag" data-en="Sports" data-te="క్రీడలు" data-ur="کھیل">Sports</span>
                         <h3 class="program-title" data-en="Milli Sports Fest 2025" data-te="మిల్లీ స్పోర్ట్స్ ఫెస్ట్ 2025" data-ur="ملی اسپورٹس فیسٹ 2025">Milli Sports Fest 2025</h3>
@@ -1445,7 +1434,7 @@
                 </div>
 
                 <div class="program-card reveal">
-                    <div class="program-image">🎓</div>
+                    <div class="program-image"><i data-lucide="graduation-cap" style="width: 64px; height: 64px; color: rgba(255,255,255,0.8);"></i></div>
                     <div class="program-content">
                         <span class="program-tag" data-en="Career" data-te="కెరీర్" data-ur="کیریئر">Career</span>
                         <h3 class="program-title" data-en="TPSC Free Coaching" data-te="TPSC ఉచిత కోచింగ్" data-ur="TPSC مفت کوچنگ">TPSC Free Coaching</h3>
@@ -1454,7 +1443,7 @@
                 </div>
 
                 <div class="program-card reveal">
-                    <div class="program-image">💪</div>
+                    <div class="program-image"><i data-lucide="heart-handshake" style="width: 64px; height: 64px; color: rgba(255,255,255,0.8);"></i></div>
                     <div class="program-content">
                         <span class="program-tag" data-en="Youth" data-te="యువత" data-ur="نوجوان">Youth</span>
                         <h3 class="program-title" data-en="Youth Empowerment" data-te="యువ సాధికారత" data-ur="نوجوانوں کو بااختیار بنانا">Youth Empowerment</h3>
@@ -1463,7 +1452,7 @@
                 </div>
 
                 <div class="program-card reveal">
-                    <div class="program-image">🚫</div>
+                    <div class="program-image"><i data-lucide="shield-alert" style="width: 64px; height: 64px; color: rgba(255,255,255,0.8);"></i></div>
                     <div class="program-content">
                         <span class="program-tag" data-en="Awareness" data-te="అవగాహన" data-ur="آگاہی">Awareness</span>
                         <h3 class="program-title" data-en="Anti-Drug Campaign" data-te="మాదకద్రవ్య వ్యతిరేక ప్రచారం" data-ur="منشیات مخالف مہم">Anti-Drug Campaign</h3>
@@ -1472,7 +1461,7 @@
                 </div>
 
                 <div class="program-card reveal">
-                    <div class="program-image">⚖️</div>
+                    <div class="program-image"><i data-lucide="gavel" style="width: 64px; height: 64px; color: rgba(255,255,255,0.8);"></i></div>
                     <div class="program-content">
                         <span class="program-tag" data-en="Advocacy" data-te="న్యాయవాదం" data-ur="وکالت">Advocacy</span>
                         <h3 class="program-title" data-en="Prison Reforms" data-te="జైలు సంస్కరణలు" data-ur="جیل اصلاحات">Prison Reforms</h3>
@@ -1650,15 +1639,15 @@
                 
                 <ul class="contact-details">
                     <li>
-                        <span class="icon">📍</span>
+                        <span class="icon"><i data-lucide="map-pin" style="width: 20px; height: 20px;"></i></span>
                         <span data-en="Masjid-e-Arqam, Quba Colony, Shaheen Nagar, Near JGR Garden, Hyderabad, Telangana" data-te="మస్జిద్-ఎ-అర్కమ్, కుబా కాలనీ, షాహీన్ నగర్, JGR గార్డెన్ సమీపంలో, హైదరాబాద్, తెలంగాణ" data-ur="مسجد ارقم، قباء کالونی، شاہین نگر، جے جی آر گارڈن کے قریب، حیدرآباد، تلنگانہ">Masjid-e-Arqam, Quba Colony, Shaheen Nagar, Near JGR Garden, Hyderabad, Telangana</span>
                     </li>
                     <li>
-                        <span class="icon">📞</span>
+                        <span class="icon"><i data-lucide="phone" style="width: 20px; height: 20px;"></i></span>
                         <span>+91 XXXXX XXXXX</span>
                     </li>
                     <li>
-                        <span class="icon">✉️</span>
+                        <span class="icon"><i data-lucide="mail" style="width: 20px; height: 20px;"></i></span>
                         <span>info@aimctelangana.org</span>
                     </li>
                 </ul>
@@ -1729,13 +1718,18 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top"><i data-lucide="arrow-up" style="width: 24px; height: 24px;"></i></button>
 
     <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
         // Loader
         window.addEventListener('load', () => {
             setTimeout(() => {
                 document.getElementById('loader').classList.add('hidden');
+                // Re-initialize Lucide icons after loader hides
+                lucide.createIcons();
             }, 500);
         });
 
@@ -1796,12 +1790,12 @@
             }
         }
 
-        // Check for saved theme or system preference
+        // Check for saved theme - default to light mode
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             setTheme(savedTheme === 'dark');
         } else {
-            setTheme(prefersDark.matches);
+            setTheme(false); // Default to light mode
         }
 
         themeToggle.addEventListener('click', () => {
